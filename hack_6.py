@@ -19,4 +19,3 @@ def fn_hack_6():
         elif result == []:
             result = ["0"]
     return result
-print(fn_hack_6())
