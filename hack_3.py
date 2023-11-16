@@ -22,9 +22,9 @@ def fn_hack_3(result):
     result = result.replace("i" , "¡")
     result = result.replace("o" , "0")
     result = result.replace("u" , "v")
-    if len(result) > 2:
-        result = result[0].upper() + result[1:-1] + result[-1].upper()
-    else:
-        result = result[0].upper() + result[1:]
+    result = result.replace("q" , "Q")
+    result = result.replace("x" , "X")
+    result = result.replace("f" , "F")
+    result = result.replace("b" , "B")
+    result = result.replace("n" , "N")
     return result
-print(fn_hack_3("barziman"))

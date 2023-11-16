@@ -8,8 +8,8 @@ text: "eq" output => "eq"
 """
 
 
-def fn_hack_5():
-    result = "fooziman"
+def fn_hack_5(result):
+
     if result[0] == "f":
         result = result[:2] + result[2].replace("o", "-") + result[3:5] + "-" + result[5:-1] + "-"
     elif result[0] == "b":

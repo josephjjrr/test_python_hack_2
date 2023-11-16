@@ -9,13 +9,16 @@ text: [] output => ["0"]
 """
 
 
-def fn_hack_6():
-    result = ["a","b","c","d","e"]
+def fn_hack_6(result):
+
+    if len(result) == 0:
+        result.append("0")
+
     for index, valor in enumerate(result):
         if valor == "a" or valor == "c" or valor == "e":
              result[index] = str(index+1)
+
         elif valor == "b" or valor == "d":
             result[index] = "-"
-        elif result == []:
-            result = ["0"]
     return result
+print(fn_hack_6(["a","b","c","d","e"]))
